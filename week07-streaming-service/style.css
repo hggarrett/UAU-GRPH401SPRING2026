@@ -1,0 +1,9 @@
+section {
+    text-align: center;
+}
+.card {
+    display: inline-block;
+    vertical-align: top; 
+    margin: 50 px 50px; 
+    /* The rest of your .card css below this */
+}
