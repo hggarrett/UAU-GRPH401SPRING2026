@@ -1,0 +1,43 @@
+/* CSS Variables for this project */
+:root {
+    --primary: #6c5ce7;
+    --dark: #2d3436;
+    --alternate: #00b894;
+    --light: #ffffff; 
+    --spacing: 20px;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--light);
+    color: var(--dark);}
+
+    header {
+        padding: var(--spacing);
+        background: var(--primary);
+        color: var(--light);
+        text-align: center;
+    }
+.hero {padding: var(--spacing);
+    text-align: center;
+}
+
+button {
+    background: var(--primary);
+    color: white; 
+    border: none;
+    padding: 12px 24px;
+}
+/* Enhance for larger screens */
+@media (min-width: 768px) {
+    :root {--spacing: 60px;}
+    header {
+        background-color: var(--dark);
+    }
+    h1 {font-size: 3rem;}
+}
+/* Alternate for very large screens */
+
+@media (min-width: 1200px) {
+    header { background-color: var(--alternate);}
+}
