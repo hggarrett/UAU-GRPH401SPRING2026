@@ -1,0 +1,86 @@
+/* Project Variables */ 
+:root {
+    --primary: #A82228;
+    --dark: #06402b;
+    --alternate: #00b894;
+    --light: #ffffff; 
+    --spacing: 30px;
+    --font-sm: 18px; 
+    --font-md: 40px; 
+    --font-lg: 100px;
+    --spacing-sm: 20px; 
+    --spacing--md: 50px; 
+    --spacing--lg: 100px;
+}
+    /*enter your other variables here */
+
+/* Start with a mobile-first approach */
+header {
+    background: var(--primary);
+         padding: var(--spacing-sm);
+           text-align: left;
+
+}
+header h1 {
+    font-size: var(--font-sm);
+
+}
+
+.card-content h2 { 
+    font-size: var(--font-sm);
+}
+
+.card{
+    text-align: left;
+     padding: var(--spacing-sm);
+}
+.card-content button {
+    background-color:var(--alternate);
+    padding: 12px;
+}
+.card-content button:hover {
+    background-color:var(--dark);
+}
+
+/* Now add media queries for tablet screens and above 768px */
+@media (min-width: 767px) 
+  {
+    header {
+        background-color: var(--dark);
+             padding: var(--spacing-md);
+             text-align: center;
+    }  
+    header h1 {
+        font-size: var(--font-md);
+    } 
+    .card-content h2 { 
+font-size: var(--font-md);
+    }
+    .card{
+        text-align: center;
+        padding: var(--spacing-md);
+    }
+  }
+
+  
+/* Now add media queries for desktop screens and above 1024px */
+
+@media (min-width: 1024px) 
+  {
+    header {
+        background-color: var(--alternate);
+          padding: var(--spacing-lg);
+          text-align: center;
+    } 
+    
+    header h1 {
+        font-size: var(--font-lg);
+    }
+    
+    .card-content h2 { 
+font-size: var(--font-lg);
+    }
+
+    .card{
+    text-align: center;
+}}
