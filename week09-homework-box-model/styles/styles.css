@@ -1,0 +1,59 @@
+/* project variables */
+:root {
+    --primary-color: #00ff4c;
+    --secondary-color: #364b5d;
+    --border-color: #dddddd;
+    --border-width: 5px;
+    --button-background-color: #276137;
+    --button-text-color: #ffffff;
+    --button-hover-background-color: #00ff44;
+    --button-padding: 11px 23px; 
+    --card-padding-mobile: 14px;
+    --card-padding-desktop: 40px;
+    --card-border-radius: 13px;
+    --card-margin: 22px; 
+    --card-width-desktop: 451px; 
+    --card-width-mobile: 301px;
+    --heading-font-size-desktop: 38px; 
+    --paragraph-font-size: 15px;
+    --image-width: 100%;
+}
+
+/* Style the card for all other sizes */
+    .card {
+        width: var(--card-width-desktop);
+        padding: var(--card-padding-desktop);
+        margin: var(--card-margin);
+     border: var(--border-width) solid var(--border-color);
+     border-radius: var(--card-border-radius);
+    } 
+
+    img {
+       width: var(--image-width);
+    }
+    
+    button { 
+        background-color: var(--button-background-color);
+        color: var(--button-text-color);
+        padding: var(--button-padding);
+    }
+    button:hover {
+        background-color: var(--button-hover-background-color);
+    }
+h2 {
+   font-size: var(--heading-font-size-desktop);
+}
+
+ p { font-size: var(--paragraph-font-size); }
+
+/* Style the card just for mobile */ 
+@media (max-width: 767px) {
+    .card {
+    padding: var(--card-padding-mobile);
+    width: var(--card-width-mobile);
+    } 
+}
+
+h2 { 
+  font-size: var(--heading-font-size-mobile);  
+}
