@@ -1,0 +1,98 @@
+:root {
+  /* Theme 1 — Default */
+  --bg-color: #BF913B;
+  --text-color: #D9D4CC;
+  --accent-color: #574528;
+  --card-bg: #A64826;
+  --header-bg: #4b4c29;
+  --header-text: #D9D4CC;
+  --btn-bg: #574528;
+  --btn-text: #BF913B;
+
+}
+
+.theme-two {
+  --bg-color: #ffbabf;
+  --text-color: #F2F2F2;
+  --accent-color: #F25A38;
+  --card-bg: #7EADBF;
+  --header-bg: #080a44;
+  --header-text:#65ffe2;
+  --btn-bg: #42708C;
+  --btn-text: #171a4c;
+}
+
+.theme-three {
+  /* Theme 1 — Default */
+  --bg-color: #660f56;
+  --text-color: #f54952;
+  --accent-color: #ae2d68;
+  --card-bg: #ffd166;
+  --header-bg: #341671;
+  --header-text: #f8edeb;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* Smooth theme switching — makes color change animate instead of snap
+*/
+  transition: all 0.3s ease;
+}
+
+/* ─── FLEXBOX TEASER — more on this next week! ─── */
+.cards {
+  display: flex; /* Lines the cards up side by side */
+  gap: 20px; /* Space between each card */
+  padding: 20px 40px 60px;
+}
+
+.card {
+  flex: 1; /* Each card takes up an equal share of the row */
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%; /* Image fills the full width of the card */
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.card h3 {
+  color: var(--header-text);
+}
+
+/* ─── MOBILE: Stack the cards on small screens ─── */
+@media (max-width: 767px) {
+  .cards {
+    flex-direction: column; /* On mobile, stack cards vertically */
+  }
+}
+
+/* ─── Header Layout — also uses Flexbox (more on this next week!) ─── */
+header {
+  display: flex; /* puts children side by side */
+  justify-content: space-between; /* pushes h1 left, buttons right */
+  align-items: center; /* vertically centers both */
+  padding: 20px 40px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+}
+header h1 {
+  margin: 0;
+}
+.theme-buttons button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer {
+    text-align: center;
+}
