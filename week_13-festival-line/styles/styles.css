@@ -1,0 +1,87 @@
+/* == RESET ============================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+/* == PAGE ============================================= */
+body {
+font-family: Arial, sans-serif;
+background-color: #0b0b0f;
+color: #ffffff;
+padding-bottom: 4rem;
+}
+/* == HEADER =========================================== */
+.festival-header {
+text-align: center;
+padding: 3rem 2rem 2rem;
+border-bottom: 2px solid #c8972b;
+margin-bottom: 2rem;
+}
+.festival-header h1 {
+font-size: 3rem;
+letter-spacing: 6px;
+color: #c8972b;
+}
+.festival-header p {
+font-size: 0.9rem;
+color: #6b7280;
+margin-top: 0.5rem;
+letter-spacing: 2px; }
+
+/* == LINEUP SECTIONS ================================== */
+.lineup-section {
+padding: 2rem 2rem 1rem;
+min-height: 340px;
+}
+.row-label {
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 3px;
+color: #6b7280;
+margin-bottom: 1.25rem;
+}
+/* == CARDS ============================================ */
+.card {
+background-color: #1a1a2e;
+border-radius: 8px;
+padding: 1rem;
+text-align: center;
+}
+.card-art {
+background-color: #2d2d4e;
+border-radius: 4px;
+width: 100%;
+aspect-ratio: 1;
+margin-bottom: 0.75rem;
+}
+.card p { font-size: 0.85rem; color: #a0aec0; }
+.card-lg { width: 240px; }
+.card-md { width: 170px; }
+.card-sm { width: 130px; }
+/* =====================================================
+YOUR FLEXBOX CODE GOES IN THE THREE BLOCKS BELOW.
+DO NOT EDIT ANYTHING ABOVE THIS LINE.
+===================================================== */
+/* ROW 1 - Headliners */
+.row-1 {
+display: flex;
+/* Challenge 1: add your property here */
+justify-content: center;
+/* Challenge 2: update this block for challenge 2 */
+flex-direction: column;
+align-items: center;
+}
+/* ROW 2 - Main Stage */
+.row-2 {
+display: flex;
+/* Challenge 3: add your property here */
+justify-content: space-between; 
+/* Challenge 4: update this block for challenge 4 */
+align-content: flex-end; 
+}
+/* ROW 3 - All Stages */
+.row-3 {
+display: flex; 
+/* Challenge 5: add your property here */
+flex-wrap: wrap;
+
+/* Challenge 6: update this block for challenge 6 */ 
+justify-content: space-evenly;
+}
